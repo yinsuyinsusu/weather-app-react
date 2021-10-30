@@ -1,8 +1,5 @@
-
-import { render } from "@testing-library/react";
 import "./App.css";
 import WeatherSearch from "./SearchForm";
-
 
 function App() {
   return (
@@ -34,6 +31,7 @@ function App() {
         <a
           href="https://github.com/yinsuyinsusu/weatherapp-react"
           target="_blank"
+          rel="noreferrer"
         >
           Open-source code
         </a>
