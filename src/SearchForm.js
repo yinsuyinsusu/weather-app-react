@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./App.css";
+
 
 export default function WeatherSearch() {
   const [city, setCity] = useState("");
@@ -40,13 +42,11 @@ export default function WeatherSearch() {
       <div>
         {form}
         <ul>
-          <li>Temperature: {Math.round(weather.temperature)}°C</li>
-          <li>Description: {weather.description}</li>
-          <li>Humidity: {weather.humidity}%</li>
-          <li>Wind: {weather.wind}km/h</li>
-          <li>
-            <img src={weather.icon} alt={weather.description} />
-          </li>
+          <span>Temperature: {Math.round(weather.temperature)}°C</span>
+          <span>Description: {weather.description}</span>
+          <span>Humidity: {weather.humidity}%</span>
+          <span>Wind: {weather.wind}km/h</span>
+          <span><img src={weather.icon} alt={weather.description} /></span>
         </ul>
       </div>
     );
