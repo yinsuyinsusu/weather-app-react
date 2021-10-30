@@ -1,6 +1,14 @@
-.App {
+App {
+  font-size: 15px;
+  margin: 50px auto;
+}
+.WeatherForm {
   text-align: center;
-  margin:50px;
+  margin: 50px auto;
+  max-width: 500px;
+  border: 2px solid #dadde1;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px 2 rgb(0 0 0 /8%);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -31,4 +39,34 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.current {
+  position: relative;
+  left: 200px;
+  top: -37px;
+}
+.currentCity {
+  text-align: left;
+  position: relative;
+  left: 20px;
+}
+.currentExtra {
+  position: relative;
+  left: 120px;
+  top: -50px;
+}
+
+.footer {
+  text-align: center;
+}
+.searchForm {
+  margin: 15px;
+  width: 300px;
+  position: relative;
+  left: -50px;
+}
+.searchButton {
+  position: relative;
+  left: -40px;
 }
