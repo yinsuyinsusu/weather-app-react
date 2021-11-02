@@ -51,22 +51,45 @@ App {
   position: relative;
   left: 20px;
 }
-.currentExtra {
-  position: relative;
-  left: 120px;
-  top: -50px;
+button,
+form {
+  border-radius: 5px;
 }
-
 .footer {
   text-align: center;
+  font-size: 10px;
+  position: relative;
+  top: -35px;
 }
 .searchForm {
-  margin: 15px;
-  width: 300px;
+  width: 320px;
   position: relative;
-  left: -50px;
+  left: 10px;
 }
-.searchButton {
+
+.current {
   position: relative;
-  left: -40px;
+  left: 335px;
+  top: -29px;
+  font-size: 15px;
+}
+
+.city {
+  font-size: 22px;
+}
+.temperature {
+  font-size: 48px;
+  font-weight: 200px;
+}
+.time,
+.description {
+  font-size: 17px;
+}
+.iconCurrent {
+  position: relative;
+  top: -10px;
+}
+.celcusCurrent {
+  position: relative;
+  top: -25px;
 }

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./App.css";
 
-
 export default function WeatherSearch() {
   const [city, setCity] = useState("");
   const [loaded, setLoaded] = useState(false);
@@ -32,13 +31,22 @@ export default function WeatherSearch() {
 
   let form = (
     <form onSubmit={handleSubmit}>
-      <input
-        type="search"
-        placeholder="Enter a city.."
-        onChange={updateCity}
-        className="searchForm"
-      />
-      <button type="Submit" className="searchButton">Search</button>
+      <div className="row">
+        <div className="col-6">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            onChange={updateCity}
+            className="searchForm"
+            autoFocus="on"
+          />
+        </div>
+        <div className="col-6">
+          <button type="Submit" className="searchButton">
+            Search
+          </button>
+        </div>
+      </div>
     </form>
   );
 
@@ -51,7 +59,9 @@ export default function WeatherSearch() {
           <span>Description: {weather.description}</span>
           <span>Humidity: {weather.humidity}%</span>
           <span>Wind: {weather.wind}km/h</span>
-          <span><img src={weather.icon} alt={weather.description} /></span>
+          <span>
+            <img src={weather.icon} alt={weather.description} />
+          </span>
         </ul>
       </div>
     );

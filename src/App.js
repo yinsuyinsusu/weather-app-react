@@ -6,26 +6,35 @@ function App() {
     <div className="App">
       <div className="container">
         <div className="WeatherForm">
-          <WeatherSearch />
-          <button className="current">Current</button>
-          <div className="currentCity">
-            <div>Lisbon</div>
-            <div>Saturday 21:59</div>
-            <div>Clouds</div>
-            <span>
-              <img
-                src="https://static.thenounproject.com/png/1906727-200.png"
-                alt="cloud"
-                width="50px"
-              ></img>
-            </span>
-            <div>
-              <span>20°C</span>
+          <div className="row">
+            <WeatherSearch />
+            <div className="col-6">
+              <button className="current">Current</button>
             </div>
           </div>
-          <div className="currentExtra">
-            <div>Precipitation:92%</div>
-            <div>Wind: 9km/h</div>
+          <div className="currentCity">
+            <div className="city">Lisbon</div>
+            <div className="time">Saturday 21:59</div>
+            <div className="description">Clouds</div>
+            <div className="row">
+              <div className="col-6">
+                <img
+                className="iconCurrent"
+                  src="https://static.thenounproject.com/png/1906727-200.png"
+                  alt="cloudy"
+                  height="56px"
+                  
+                ></img>
+                <span className="temperature">20</span>
+                <span className="celcusCurrent">°C</span>
+              </div>
+              <div className="col-6">
+                <div className="currentExtra">
+                  <div>Precipitation:92%</div>
+                  <div>Wind: 9km/h</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div className="footer">
