@@ -13,17 +13,16 @@ function App() {
             </div>
           </div>
           <div className="currentCity">
-            <div className="city">Lisbon</div>
+            <div className="city">London</div>
             <div className="time">Saturday 21:59</div>
             <div className="description">Clouds</div>
             <div className="row">
               <div className="col-6">
                 <img
-                className="iconCurrent"
+                  className="iconCurrent"
                   src="https://static.thenounproject.com/png/1906727-200.png"
                   alt="cloudy"
                   height="56px"
-                  
                 ></img>
                 <span className="temperature">20</span>
                 <span className="celcusCurrent">°C</span>
