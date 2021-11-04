@@ -1,5 +1,6 @@
 App {
   font-size: 15px;
+  border:2,2,1;
   margin: 50px auto;
 }
 .WeatherForm {

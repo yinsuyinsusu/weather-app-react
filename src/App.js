@@ -1,54 +1,40 @@
+import React from "react";
+import Weather from "./Weather";
 import "./App.css";
-import WeatherSearch from "./SearchForm";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <div className="WeatherForm">
-          <div className="row">
-            <WeatherSearch />
-            <div className="col-6">
-              <button className="current">Current</button>
-            </div>
-          </div>
-          <div className="currentCity">
-            <div className="city">London</div>
-            <div className="time">Saturday 21:59</div>
-            <div className="description">Clouds</div>
-            <div className="row">
-              <div className="col-6">
-                <img
-                  className="iconCurrent"
-                  src="https://static.thenounproject.com/png/1906727-200.png"
-                  alt="cloudy"
-                  height="56px"
-                ></img>
-                <span className="temperature">20</span>
-                <span className="celcusCurrent">°C</span>
-              </div>
-              <div className="col-6">
-                <div className="currentExtra">
-                  <div>Precipitation:92%</div>
-                  <div>Wind: 9km/h</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="footer">
+        <Weather defaultCity="London" />
+
+        <footer>
+          This project was coded by{" "}
+          <a
+            href="https://www.delac.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Yinsu
+          </a>{" "}
+          and is{" "}
           <a
             href="https://github.com/yinsuyinsusu/weatherapp-react"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
-            Open-source code
+            open-sourced on GitHub
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://heuristic-yonath-4c8eb5.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            hosted on Netlify
           </a>
-          , by Yinsu Zhou
-        </div>
+        </footer>
       </div>
     </div>
   );
 }
-
-export default App;
