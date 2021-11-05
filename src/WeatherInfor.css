@@ -1,0 +1,14 @@
+.dateNow, .descriptionNow{
+    font-size:20px;
+
+}
+.float-left{
+    position:relative;
+    left:30px;
+    font-size:25px;
+    font-weight:40px;
+    
+}
+.mt-3{
+    margin-left:25px;
+}
